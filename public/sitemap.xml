@@ -4,20 +4,29 @@
       <loc>https://waynemathnotes.com/</loc>
       <lastmod>2026-08-26</lastmod>
    </url>
+
    <url>
       <loc>https://waynemathnotes.com/math-notes/</loc>
       <lastmod>2026-08-26</lastmod>
    </url>
+
    <url>
       <loc>https://waynemathnotes.com/math-notes/form-and-value/</loc>
       <lastmod>2026-08-26</lastmod>
    </url>
+
    <url>
       <loc>https://waynemathnotes.com/math-notes/what-is-a-number/</loc>
       <lastmod>2026-08-26</lastmod>
    </url>
+
    <url>
       <loc>https://waynemathnotes.com/comp232/module1/javascript1/</loc>
+      <lastmod>2026-08-26</lastmod>
+   </url>
+
+   <url>
+      <loc>https://waynemathnotes.com/comp232/module1/javascript2/</loc>
       <lastmod>2026-08-26</lastmod>
    </url>
 </urlset>
