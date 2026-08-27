@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Form and Value 0.1: a practical way to think about equivalent mathematical forms, what they preserve, and why representation matters.">
+   <title>0.1 Form and Value | Wayne Math Notes</title>
+   <link rel="stylesheet" href="/assets/styles.css">
+</head>
+
+<body>
+   <header class="siteHeader">
+      <div class="siteHeaderInner">
+         <a class="siteName" href="/">WayneMathNotes.com</a>
+         <nav class="siteNav" aria-label="Primary navigation">
+            <a href="/math-notes/">Math Notes</a>
+            <a href="/comp232/module1/javascript1/">COMP 232</a>
+         </nav>
+      </div>
+   </header>
+
+   <main>
+      <div class="breadcrumbs">
+         <a href="/">Home</a> /
+         <a href="/math-notes/">Math Notes</a> /
+         0.1
+      </div>
+
+      <article>
+         <header class="hero">
+            <p class="eyebrow">Math Notes · 0.1</p>
+            <h1>Form and Value</h1>
+            <p class="lede">
+               A lot of mathematics gets easier once you separate two questions:
+               what is this thing worth, and what form is it written in right now?
+            </p>
+            <p class="byline">
+               Wayne Buschmeyer · Sacramento City College Math Lab
+            </p>
+         </header>
+
+         <h2>The idea</h2>
+
+         <p>
+            The basic idea behind this whole series is one I use constantly when I
+            am helping someone with math: what something <em>is</em> and how it is
+            <em>written</em> are related, but they are not the same thing.
+         </p>
+
+         <p>
+            I am going to call those two ideas <strong>Value</strong> and
+            <strong>Form</strong>.
+         </p>
+
+         <div class="twoColumn">
+            <section class="definition">
+               <p class="definitionLabel">Value</p>
+               <div class="definitionBody">
+                  <p>
+                     The mathematical quantity, object, or result we are trying to
+                     represent.
+                  </p>
+               </div>
+            </section>
+
+            <section class="definition">
+               <p class="definitionLabel">Form</p>
+               <div class="definitionBody">
+                  <p>
+                     The particular representation we are using to write, display,
+                     or work with that value.
+                  </p>
+               </div>
+            </section>
+         </div>
+
+         <p>
+            These are teaching words for this series, not universal formal
+            definitions that every mathematician uses this way. I like them because
+            they give us language for something we do in mathematics constantly.
+         </p>
+
+         <h2>Same value, different form</h2>
+
+         <div class="mathBlock">9 = 10 - 1 = 7 + 1 + 1 = 3 × 3 = (2 + 1)(4 - 1)</div>
+
+         <p>
+            All of those expressions have the same value. They do not have the same
+            form.
+         </p>
+
+         <p>
+            That sounds almost too obvious to matter, but this is basically what
+            algebra asks us to get comfortable doing. We change the way something
+            looks so that a relationship becomes easier to see, while carefully
+            preserving the mathematical meaning we care about.
+         </p>
+
+         <div class="mathBlock">x² - 1 = (x - 1)(x + 1)</div>
+
+         <p>
+            The expanded form makes the terms easy to see. The factored form makes
+            the zeros easy to see. One is not the “real” version and the other a
+            disguise. They are equivalent forms that are useful for different jobs.
+         </p>
+
+         <h2>Why students are completely reasonable to find this confusing</h2>
+
+         <p>
+            There is a sentence people hear in algebra all the time:
+            <em>“We are not changing anything.”</em>
+         </p>
+
+         <p>
+            Then the person saying it immediately adds something to both sides,
+            subtracts something, factors, distributes, cancels, rewrites a fraction,
+            and moves half the equation around.
+         </p>
+
+         <p>
+            Of course it looks like we are changing things. We are.
+         </p>
+
+         <p>
+            What we usually mean is that we are changing the <strong>Form</strong>
+            while preserving the <strong>Value</strong> or preserving an equivalent
+            relationship. That is a much more precise thing to say.
+         </p>
+
+         <div class="note">
+            The form can change dramatically while the mathematical relationship we
+            care about stays the same.
+         </div>
+
+         <h2>But not every change is safe</h2>
+
+         <p>
+            This distinction matters because algebra is not permission to rewrite
+            things however we want. A transformation has to preserve the thing we
+            are claiming it preserves, and sometimes that comes with conditions.
+         </p>
+
+         <div class="mathBlock">x(x - 2) = 0</div>
+
+         <p>
+            If I divide both sides by
+            <span class="inlineMath">x</span>, I get
+            <span class="inlineMath">x - 2 = 0</span>. But division by
+            <span class="inlineMath">x</span> assumes
+            <span class="inlineMath">x ≠ 0</span>, and that throws away the valid
+            solution <span class="inlineMath">x = 0</span>.
+         </p>
+
+         <p>
+            The manipulation looked familiar. The problem was not the notation. The
+            problem was that the transformation changed the solution set.
+         </p>
+
+         <p>
+            Squaring both sides can do the opposite and introduce solutions that
+            were not there before. Decimal approximations can replace an exact value
+            with a nearby one. Cancelling can hide a domain restriction.
+         </p>
+
+         <p>
+            So the real question is not just, “Can I make this look different?”
+            It is, “What does this step preserve?”
+         </p>
+
+         <h2>Fractions, decimals, and percents</h2>
+
+         <div class="mathBlock">1/2 = 0.5 = 50%</div>
+
+         <p>
+            Again, the value is the same, but each form emphasizes something
+            different. A fraction preserves an exact ratio very naturally. A decimal
+            is often convenient for computation and comparison. A percent frames the
+            value in relation to one hundred.
+         </p>
+
+         <p>
+            This is one reason I do not love teaching mathematics as though there is
+            always one “best” way to write an answer. Usually there is a form that is
+            best for the problem we are trying to solve right now.
+         </p>
+
+         <h2>For the advanced reader: sine</h2>
+
+         <p>
+            Sine is one of my favorite examples because the same function appears in
+            forms that look almost unrelated when you first meet them.
+         </p>
+
+         <h3>Right-triangle form</h3>
+
+         <p>
+            For an acute angle in a right triangle,
+         </p>
+
+         <div class="mathBlock">sin(θ) = opposite / hypotenuse</div>
+
+         <h3>Unit-circle form</h3>
+
+         <p>
+            On the unit circle, sine is the
+            <span class="inlineMath">y</span>-coordinate of the point at angle
+            <span class="inlineMath">θ</span>. This extends the idea beyond the acute
+            angles available inside a right triangle.
+         </p>
+
+         <h3>Power-series form</h3>
+
+         <div class="mathBlock">sin(x) = x - x³/3! + x⁵/5! - x⁷/7! + ···</div>
+
+         <p>
+            That series converges for every real or complex
+            <span class="inlineMath">x</span>.
+         </p>
+
+         <h3>Complex-exponential form</h3>
+
+         <div class="mathBlock">sin(x) = (e^(ix) - e^(-ix)) / (2i)</div>
+
+         <h3>Differential-equation form</h3>
+
+         <div class="mathBlock">f''(x) = -f(x)
+f(0) = 0
+f'(0) = 1</div>
+
+         <p>
+            These are not just cosmetic rewrites of one line of arithmetic. They
+            come from different parts of mathematics and expose different structure.
+            Geometry emphasizes position. The series emphasizes local analytic
+            structure. The exponential form exposes a connection with complex
+            numbers. The differential equation describes sine dynamically.
+         </p>
+
+         <p>
+            This is what I want the word <strong>Form</strong> to keep reminding us
+            of. A mathematical object can be understood from several directions, and
+            moving between those views is often where the interesting mathematics
+            starts.
+         </p>
+
+         <h2>A connection outside mathematics</h2>
+
+         <p>
+            I think this idea is useful outside of math too, although I want to be
+            careful not to pretend every human disagreement is secretly algebra.
+         </p>
+
+         <p>
+            Sometimes two people really do disagree. But sometimes the disagreement
+            is in representation: different language, different examples, different
+            framing, while the underlying idea is much closer than it first sounds.
+            Mathematics trains a useful question:
+         </p>
+
+         <div class="note">
+            Are these actually different ideas, or are they different forms of
+            something structurally similar?
+         </div>
+
+         <p>
+            That is not a trick for erasing differences. It is a way of checking what
+            the difference actually is.
+         </p>
+
+         <section class="practice">
+            <h2>Practice / Application</h2>
+
+            <ol>
+               <li>
+                  Write the value <span class="inlineMath">3/4</span> in at least
+                  three different forms. What does each form make easier to see?
+               </li>
+               <li>
+                  Compare <span class="inlineMath">x² + 5x + 6</span> and
+                  <span class="inlineMath">(x + 2)(x + 3)</span>. What information is
+                  easier to read from each form?
+               </li>
+               <li>
+                  Find an algebraic step that is only valid under a condition. State
+                  the condition explicitly.
+               </li>
+               <li>
+                  Think of one mathematical object you have seen represented in two
+                  very different ways.
+               </li>
+            </ol>
+         </section>
+
+         <h2>What I want you to carry forward</h2>
+
+         <ul>
+            <li>Value and representation are not the same thing.</li>
+            <li>Equivalent forms can expose very different structure.</li>
+            <li>Changing form is useful because some forms make some questions easier.</li>
+            <li>Not every manipulation preserves what we care about.</li>
+            <li>A good mathematical habit is to ask what a transformation preserves.</li>
+         </ul>
+
+         <nav class="seriesNav" aria-label="Series navigation">
+            <a href="/math-notes/">← Series index</a>
+            <a href="/math-notes/0-2-what-is-a-number/">0.2 What Is a Number? →</a>
+         </nav>
+      </article>
+   </main>
+
+   <footer>
+      <div class="footerInner">
+         Math Notes · Wayne Buschmeyer
+      </div>
+   </footer>
+</body>
+</html>

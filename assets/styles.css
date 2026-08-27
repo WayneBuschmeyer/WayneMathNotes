@@ -1,0 +1,398 @@
+:root
+{
+   color-scheme: dark;
+   --background: #0b0d10;
+   --surface: #12161b;
+   --surfaceRaised: #171c22;
+   --border: #303841;
+   --text: #f4f7fa;
+   --muted: #aab4bf;
+   --accent: #8fd3ff;
+   --accentStrong: #c6eaff;
+   --code: #d7f7c2;
+   --maxWidth: 980px;
+}
+
+*
+{
+   box-sizing: border-box;
+}
+
+html
+{
+   scroll-behavior: smooth;
+}
+
+body
+{
+   margin: 0;
+   background: var(--background);
+   color: var(--text);
+   font-family:
+      Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", sans-serif;
+   font-size: 17px;
+   line-height: 1.65;
+}
+
+a
+{
+   color: var(--accent);
+   text-underline-offset: 0.18em;
+}
+
+a:hover
+{
+   color: var(--accentStrong);
+}
+
+a:focus-visible,
+button:focus-visible
+{
+   outline: 3px solid var(--accent);
+   outline-offset: 3px;
+}
+
+.siteHeader
+{
+   border-bottom: 1px solid var(--border);
+   background: #0d1014;
+}
+
+.siteHeaderInner
+{
+   width: min(calc(100% - 32px), var(--maxWidth));
+   margin: 0 auto;
+   min-height: 64px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 24px;
+}
+
+.siteName
+{
+   color: var(--text);
+   font-family: ui-monospace, "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+   font-weight: 700;
+   text-decoration: none;
+}
+
+.siteNav
+{
+   display: flex;
+   gap: 18px;
+   flex-wrap: wrap;
+   font-size: 0.92rem;
+}
+
+main
+{
+   width: min(calc(100% - 32px), var(--maxWidth));
+   margin: 0 auto;
+   padding: 52px 0 80px;
+}
+
+.hero
+{
+   padding-bottom: 34px;
+   border-bottom: 1px solid var(--border);
+   margin-bottom: 38px;
+}
+
+.eyebrow
+{
+   margin: 0 0 8px;
+   color: var(--muted);
+   font-family: ui-monospace, "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+   font-size: 0.82rem;
+   letter-spacing: 0.08em;
+   text-transform: uppercase;
+}
+
+h1,
+h2,
+h3
+{
+   line-height: 1.2;
+   margin-top: 0;
+}
+
+h1
+{
+   font-size: clamp(2rem, 5vw, 3.5rem);
+   letter-spacing: -0.035em;
+   margin-bottom: 18px;
+}
+
+h2
+{
+   margin-top: 50px;
+   padding-bottom: 10px;
+   border-bottom: 1px solid var(--border);
+   font-size: 1.55rem;
+}
+
+h3
+{
+   margin-top: 30px;
+   font-size: 1.15rem;
+}
+
+p
+{
+   max-width: 75ch;
+}
+
+.lede
+{
+   font-size: 1.12rem;
+   color: #dce3ea;
+   max-width: 68ch;
+}
+
+.byline
+{
+   margin-top: 20px;
+   color: var(--muted);
+   font-size: 0.9rem;
+}
+
+.note
+{
+   margin: 28px 0;
+   padding: 14px 16px;
+   border-left: 3px solid var(--accent);
+   background: var(--surface);
+}
+
+.warning
+{
+   border-left-color: #f2c66d;
+}
+
+.mathBlock
+{
+   margin: 22px 0;
+   padding: 16px 18px;
+   border: 1px solid var(--border);
+   background: var(--surface);
+   overflow-x: auto;
+   font-family: ui-monospace, "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+   color: var(--code);
+   white-space: pre-wrap;
+}
+
+.inlineMath,
+code
+{
+   font-family: ui-monospace, "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+   color: var(--code);
+}
+
+.indexList
+{
+   list-style: none;
+   padding: 0;
+   margin: 24px 0;
+   border-top: 1px solid var(--border);
+}
+
+.indexList li
+{
+   border-bottom: 1px solid var(--border);
+}
+
+.indexList a
+{
+   display: grid;
+   grid-template-columns: minmax(70px, 90px) 1fr;
+   gap: 18px;
+   padding: 18px 4px;
+   color: var(--text);
+   text-decoration: none;
+}
+
+.indexList a:hover .indexTitle
+{
+   color: var(--accent);
+}
+
+.indexNumber
+{
+   color: var(--muted);
+   font-family: ui-monospace, "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+}
+
+.indexTitle
+{
+   font-weight: 700;
+}
+
+.indexDescription
+{
+   display: block;
+   margin-top: 4px;
+   color: var(--muted);
+   font-weight: 400;
+   font-size: 0.92rem;
+}
+
+.definition
+{
+   margin: 28px 0;
+   border: 1px solid var(--border);
+   background: var(--surface);
+}
+
+.definitionLabel
+{
+   margin: 0;
+   padding: 8px 12px;
+   border-bottom: 1px solid var(--border);
+   color: var(--muted);
+   font-family: ui-monospace, "Cascadia Code", "SFMono-Regular", Consolas, monospace;
+   font-size: 0.8rem;
+   text-transform: uppercase;
+   letter-spacing: 0.08em;
+}
+
+.definitionBody
+{
+   padding: 14px 16px;
+}
+
+.definitionBody p:first-child
+{
+   margin-top: 0;
+}
+
+.definitionBody p:last-child
+{
+   margin-bottom: 0;
+}
+
+.twoColumn
+{
+   display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+   gap: 18px;
+   margin: 24px 0;
+}
+
+.panel
+{
+   border: 1px solid var(--border);
+   background: var(--surface);
+   padding: 18px;
+}
+
+.panel h3
+{
+   margin-top: 0;
+}
+
+.practice
+{
+   margin-top: 28px;
+   padding: 20px;
+   border: 1px solid var(--border);
+   background: var(--surfaceRaised);
+}
+
+.practice ol,
+.practice ul
+{
+   padding-left: 1.4rem;
+}
+
+.breadcrumbs
+{
+   margin-bottom: 26px;
+   color: var(--muted);
+   font-size: 0.9rem;
+}
+
+.breadcrumbs a
+{
+   color: var(--muted);
+}
+
+.seriesNav
+{
+   margin-top: 56px;
+   padding-top: 20px;
+   border-top: 1px solid var(--border);
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+   flex-wrap: wrap;
+}
+
+footer
+{
+   border-top: 1px solid var(--border);
+   color: var(--muted);
+}
+
+.footerInner
+{
+   width: min(calc(100% - 32px), var(--maxWidth));
+   margin: 0 auto;
+   padding: 24px 0 40px;
+   font-size: 0.85rem;
+}
+
+.assignmentShell
+{
+   text-align: center;
+   padding-top: 18vh;
+}
+
+.assignmentCard
+{
+   width: min(calc(100% - 32px), 640px);
+   margin: 0 auto;
+   padding: 26px;
+   border: 1px solid rgba(255, 255, 255, 0.35);
+   background: rgba(11, 13, 16, 0.90);
+   color: #f4f7fa;
+   text-align: left;
+   backdrop-filter: blur(4px);
+}
+
+.assignmentCard h1
+{
+   font-size: clamp(1.8rem, 5vw, 2.5rem);
+}
+
+@media (max-width: 680px)
+{
+   body
+   {
+      font-size: 16px;
+   }
+
+   .siteHeaderInner
+   {
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 14px 0;
+      gap: 8px;
+   }
+
+   .twoColumn
+   {
+      grid-template-columns: 1fr;
+   }
+
+   main
+   {
+      padding-top: 34px;
+   }
+
+   .indexList a
+   {
+      grid-template-columns: 64px 1fr;
+   }
+}

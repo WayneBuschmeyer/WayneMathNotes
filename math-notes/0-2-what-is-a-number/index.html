@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Form and Value 0.2: numbers as abstract objects, numerals as representations, and a useful geometric model built from origin, direction, and unit.">
+   <title>0.2 What Is a Number? | Wayne Math Notes</title>
+   <link rel="stylesheet" href="/assets/styles.css">
+</head>
+
+<body>
+   <header class="siteHeader">
+      <div class="siteHeaderInner">
+         <a class="siteName" href="/">WayneMathNotes.com</a>
+         <nav class="siteNav" aria-label="Primary navigation">
+            <a href="/math-notes/">Math Notes</a>
+            <a href="/comp232/module1/javascript1/">COMP 232</a>
+         </nav>
+      </div>
+   </header>
+
+   <main>
+      <div class="breadcrumbs">
+         <a href="/">Home</a> /
+         <a href="/math-notes/">Math Notes</a> /
+         0.2
+      </div>
+
+      <article>
+         <header class="hero">
+            <p class="eyebrow">Math Notes · 0.2</p>
+            <h1>What Is a Number?</h1>
+            <p class="lede">
+               We use numbers constantly, but “what is a number?” turns out to be a
+               much more interesting question than “what does this numeral say?”
+            </p>
+            <p class="byline">
+               Wayne Buschmeyer · Sacramento City College Math Lab
+            </p>
+         </header>
+
+         <h2>A useful model for real numbers</h2>
+
+         <p>
+            One very useful way to build intuition about real numbers is to think
+            about distance and direction on a number line. This becomes especially
+            helpful once we start working with signed numbers and addition.
+         </p>
+
+         <p>
+            Mathematics contains many kinds of numbers and several rigorous ways to
+            construct them, so “distance from an origin” is better understood as a
+            model than as a universal definition of number. It is a way of seeing
+            numbers that makes certain structure very clear.
+         </p>
+
+         <div class="note">
+            The point of the model is not to replace every definition of number. It
+            is to give us a form that makes direction, scale, and relationship easy
+            to see.
+         </div>
+
+         <h2>Number and numeral are different things</h2>
+
+         <p>
+            The mark <span class="inlineMath">3</span> is not the number three in the
+            same way the word “cat” is not an actual cat.
+         </p>
+
+         <p>
+            The written mark is a <strong>numeral</strong>: a representation. The
+            number is the abstract mathematical object that representation refers to.
+         </p>
+
+         <div class="twoColumn">
+            <section class="definition">
+               <p class="definitionLabel">Number</p>
+               <div class="definitionBody">
+                  <p>
+                     An abstract mathematical object used inside a number system.
+                     Depending on context, numbers can describe quantity, order,
+                     position, measurement, ratio, and more.
+                  </p>
+               </div>
+            </section>
+
+            <section class="definition">
+               <p class="definitionLabel">Numeral</p>
+               <div class="definitionBody">
+                  <p>
+                     A written symbol or string of symbols used to represent a
+                     number.
+                  </p>
+               </div>
+            </section>
+         </div>
+
+         <p>
+            This is another Form-and-Value distinction. The numeral is a form. The
+            number is the mathematical object we are trying to represent.
+         </p>
+
+         <h2>A geometric model: origin, unit, direction</h2>
+
+         <p>
+            Now we can build the model I actually want for the next several lessons.
+         </p>
+
+         <p>
+            Pick a point and call it the <strong>origin</strong>. Give that point the
+            coordinate <span class="inlineMath">0</span>. Then choose a unit length
+            and a positive direction.
+         </p>
+
+         <div class="mathBlock">-3   -2   -1    0    1    2    3
+ ←----------------|----------------→
+                  origin</div>
+
+         <p>
+            Once those choices are made, every real number corresponds to a position
+            on the line. Positive and negative signs encode which side of the origin
+            we are on, and absolute value tells us the distance from zero.
+         </p>
+
+         <div class="mathBlock">|-3| = 3
+| 3| = 3</div>
+
+         <p>
+            The numbers <span class="inlineMath">-3</span> and
+            <span class="inlineMath">3</span> are different values, but they are the
+            same distance from zero.
+         </p>
+
+         <h2>Zero is not arbitrary, but the origin can be</h2>
+
+         <p>
+            The number zero is not something we casually redefine. In ordinary
+            arithmetic, zero has a very specific structural role: it is the additive
+            identity.
+         </p>
+
+         <div class="mathBlock">a + 0 = a</div>
+
+         <p>
+            What we <em>can</em> choose is which physical or geometric location gets
+            coordinate zero.
+         </p>
+
+         <p>
+            Sea level can be zero elevation. The freezing point of water can be zero
+            on one temperature scale. A timeline can declare some event to be time
+            zero. A coordinate system can place its origin wherever it is useful.
+         </p>
+
+         <p>
+            Moving the origin changes the coordinates we assign to points. It does
+            not change the underlying distances between those points.
+         </p>
+
+         <p>
+            That distinction is exactly the kind of thing Form and Value is meant to
+            help us notice.
+         </p>
+
+         <h2>The unit matters too</h2>
+
+         <p>
+            Coordinates only mean something relative to a scale. A distance of
+            <span class="inlineMath">3</span> could mean three meters, three feet,
+            three seconds from a reference event, or three abstract units in a
+            mathematical model.
+         </p>
+
+         <p>
+            If we change units, the numerical representation may change even when the
+            underlying measured quantity does not.
+         </p>
+
+         <div class="mathBlock">1 meter = 100 centimeters</div>
+
+         <p>
+            The measurement has a new numerical form because we changed the unit.
+            The physical length did not suddenly become one hundred times longer.
+         </p>
+
+         <h2>Why I like the “movement” model</h2>
+
+         <p>
+            Once numbers are sitting on a line, addition becomes movement in a really
+            natural way.
+         </p>
+
+         <div class="mathBlock">2 + 3 = 5
+
+Start at 2.
+Move 3 units in the positive direction.
+Land at 5.</div>
+
+         <div class="mathBlock">2 + (-3) = -1
+
+Start at 2.
+Move 3 units in the negative direction.
+Land at -1.</div>
+
+         <p>
+            That picture does not replace every interpretation of addition. If I am
+            counting three apples and then getting two more apples, “combine two
+            quantities” is probably the more natural story.
+         </p>
+
+         <p>
+            But the movement model becomes especially useful when negatives enter the
+            picture. It gives the sign a job: magnitude tells us how far, and sign
+            tells us which direction along the chosen axis.
+         </p>
+
+         <h2>Different number systems solve different problems</h2>
+
+         <p>
+            One reason “what is a number?” gets complicated is that the collection of
+            things we are willing to call numbers has grown as mathematics has grown.
+         </p>
+
+         <ul>
+            <li>
+               <strong>Natural numbers</strong> are enough for basic counting.
+            </li>
+            <li>
+               <strong>Integers</strong> let subtraction move freely through zero.
+            </li>
+            <li>
+               <strong>Rational numbers</strong> represent ratios of integers.
+            </li>
+            <li>
+               <strong>Real numbers</strong> give us the continuous real number line.
+            </li>
+            <li>
+               <strong>Complex numbers</strong> extend the reals with another
+               independent direction and make equations such as
+               <span class="inlineMath">x² + 1 = 0</span> solvable.
+            </li>
+         </ul>
+
+         <p>
+            Each extension preserves a lot of the structure we already know while
+            giving us new things we are allowed to do.
+         </p>
+
+         <h2>For the advanced reader: from the line to the plane</h2>
+
+         <p>
+            The movement picture becomes even more interesting when we stop insisting
+            on one dimension.
+         </p>
+
+         <p>
+            A real number can be pictured as a coordinate on a line. A complex number
+            <span class="inlineMath">a + bi</span> can be pictured as the point
+            <span class="inlineMath">(a, b)</span> in a plane.
+         </p>
+
+         <div class="mathBlock">real direction       → a
+imaginary direction  → b
+
+a + bi  ↔  (a, b)</div>
+
+         <p>
+            In that form, complex numbers stop looking like a weird exception bolted
+            onto arithmetic and start looking geometric. Multiplication by
+            <span class="inlineMath">i</span>, for example, acts like a quarter-turn
+            in the complex plane.
+         </p>
+
+         <p>
+            This is exactly the sort of connection I care about in this series. A new
+            form does not merely make the old idea prettier. Sometimes it makes a
+            structure visible that was extremely hard to see before.
+         </p>
+
+         <section class="practice">
+            <h2>Practice / Application</h2>
+
+            <ol>
+               <li>
+                  Explain the difference between a number and a numeral in your own
+                  words.
+               </li>
+               <li>
+                  On a number line, what is the difference between
+                  <span class="inlineMath">-4</span> and
+                  <span class="inlineMath">4</span>? What do they have in common?
+               </li>
+               <li>
+                  Explain why changing from meters to centimeters changes the number
+                  used in the measurement without changing the physical length.
+               </li>
+               <li>
+                  Use movement on a number line to explain
+                  <span class="inlineMath">-2 + 7</span>.
+               </li>
+               <li>
+                  Give an example where choosing a different origin changes the
+                  coordinates but does not change the underlying geometry.
+               </li>
+            </ol>
+         </section>
+
+         <h2>What I want you to carry forward</h2>
+
+         <ul>
+            <li>A number and the numeral used to write it are different things.</li>
+            <li>
+               Thinking of real numbers as directed positions on a line is a model,
+               not the only definition of number.
+            </li>
+            <li>
+               In a coordinate model, we choose an origin, a unit, and a positive
+               direction.
+            </li>
+            <li>Zero itself has a fixed algebraic role as the additive identity.</li>
+            <li>
+               Changing origin or units can change numerical form while preserving
+               important underlying relationships.
+            </li>
+            <li>
+               This movement model gives us a useful foundation for thinking about
+               addition next.
+            </li>
+         </ul>
+
+         <nav class="seriesNav" aria-label="Series navigation">
+            <a href="/math-notes/0-1-form-and-value/">← 0.1 Form and Value</a>
+            <a href="/math-notes/">Series index →</a>
+         </nav>
+      </article>
+   </main>
+
+   <footer>
+      <div class="footerInner">
+         Math Notes · Wayne Buschmeyer
+      </div>
+   </footer>
+</body>
+</html>
