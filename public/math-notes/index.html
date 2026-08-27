@@ -3,23 +3,34 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="Wayne Math Notes: mathematics foundations, worked explanations, and connections by Wayne Buschmeyer.">
+   <meta name="theme-color" content="#0b0d10">
+   <meta name="description" content="Wayne Math Notes: foundations, worked explanations, and mathematical connections by Wayne Buschmeyer.">
+   <link rel="canonical" href="https://waynemathnotes.com/math-notes/">
+
+   <meta property="og:type" content="website">
+   <meta property="og:site_name" content="Wayne Math Notes">
+   <meta property="og:title" content="Math Notes | Wayne Math Notes">
+   <meta property="og:description" content="Foundations, worked explanations, and mathematical connections by Wayne Buschmeyer.">
+   <meta property="og:url" content="https://waynemathnotes.com/math-notes/">
+
    <title>Math Notes | Wayne Math Notes</title>
    <link rel="stylesheet" href="/assets/styles.css">
 </head>
 
 <body>
+   <a class="skipLink" href="#main-content">Skip to main content</a>
+
    <header class="siteHeader">
       <div class="siteHeaderInner">
          <a class="siteName" href="/">WayneMathNotes.com</a>
          <nav class="siteNav" aria-label="Primary navigation">
-            <a href="/math-notes/">Math Notes</a>
+            <a href="/math-notes/" aria-current="page">Math Notes</a>
             <a href="/comp232/module1/javascript1/">COMP 232</a>
          </nav>
       </div>
    </header>
 
-   <main>
+   <main id="main-content">
       <div class="breadcrumbs">
          <a href="/">Home</a> / Math Notes
       </div>
@@ -33,16 +44,10 @@
             operation comes next.
          </p>
          <p>
-            The organizing idea is simple. Mathematical objects can be represented
-            in different ways, and those representations make different things easy
-            to see. I use <strong>Form</strong> for the representation and
-            <strong>Value</strong> for the mathematical object, quantity, or
-            relationship we are trying to preserve.
-         </p>
-         <p>
-            That language is a teaching lens, not a universal formal definition.
-            The goal is to give us something useful to ask whenever mathematics
-            changes shape: <em>what changed, and what stayed the same?</em>
+            One idea that comes up constantly is that mathematical objects can be
+            represented in different ways, and those representations make different
+            things easy to see. A useful question whenever mathematics changes shape
+            is: <em>what changed, and what stayed the same?</em>
          </p>
          <p class="byline">
             Wayne Buschmeyer · Sacramento City College Math Lab
@@ -53,7 +58,7 @@
 
       <ol class="indexList">
          <li>
-            <a href="/math-notes/0-1-form-and-value/">
+            <a href="/math-notes/form-and-value/">
                <span class="indexNumber">0.1</span>
                <span>
                   <span class="indexTitle">Form and Value</span>
@@ -67,7 +72,7 @@
          </li>
 
          <li>
-            <a href="/math-notes/0-2-what-is-a-number/">
+            <a href="/math-notes/what-is-a-number/">
                <span class="indexNumber">0.2</span>
                <span>
                   <span class="indexTitle">What Is a Number?</span>
@@ -80,7 +85,7 @@
          </li>
 
          <li>
-            <a href="#" aria-disabled="true" onclick="return false;">
+            <div class="indexItem">
                <span class="indexNumber">0.3</span>
                <span>
                   <span class="indexTitle">Addition — coming next</span>
@@ -89,11 +94,11 @@
                      composing movement.
                   </span>
                </span>
-            </a>
+            </div>
          </li>
 
          <li>
-            <a href="#" aria-disabled="true" onclick="return false;">
+            <div class="indexItem">
                <span class="indexNumber">0.4</span>
                <span>
                   <span class="indexTitle">Multiplication — coming later</span>
@@ -102,7 +107,7 @@
                      beginning of a much larger family of structures.
                   </span>
                </span>
-            </a>
+            </div>
          </li>
       </ol>
    </main>
